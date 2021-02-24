@@ -24,7 +24,7 @@ Data:
 
 Trained Model:
 * Trained model is defined by combining the untrained model + model weights.
-* Trained model weights are used in inference p1b2.model.h5
+* Trained model weights are used in inference p1b2.model.h5.
 
 ### Technical Details:
-Please refer to this [README](./Pilot1/TC1/README.md)
+Please refer to this [README](./Pilot1/TC1/README.md).
