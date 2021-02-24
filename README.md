@@ -5,26 +5,27 @@ The Tumor Classifier capability (TC1) shows how to train and use a neural networ
 (e.g., RNASeq expressions) provided in Genomics Data Commons (GDC).
 
 ### User Community:	
-Primary: Cancer biology data modeling<br />
-Secondary: Machine Learning; Bioinformatics; Computational Biology
+Researchers interested in cancer susceptibility/histology; classification of diseases for oncology; cancer biology 
+
 
 ### Usability:	
-The provided untrained model can be used by a data scientist. The scripts use already processed data. The untrained model makes heavy use of CANDLE API layers which may limit its usability for novice users.
+The provided untrained model can be used by a data scientist to be trained on their own data, or use the trained model to classify the provided test samples. The provided scripts use data that has been downloaded and normalized from GDC.
 
 ### Uniqueness:	
-Using neural networks in classification of somatic mutation has been presented in other research papers. This model aggregates the variation impact by gene from 2.7 million unique SNPs which might not be the best way to reduce the features space. The technical team is not sure about the uniqueness of the method used to reduce the dimension of the somatic mutations.
+Using machine learning to classify molecular data has been comonly used. This capability shows how neural networks can be used in
+classification of genomic profiles without downsampling the provided expressions.
 
 ### Components:	
 
 Untrained model: 
-* Untrained neural network model is defined in p1b2.model.json.
+* Untrained neural network model is defined in [tc1.model.json](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-6996872). Also available in yaml format.
 
 Data:
-* Processed training and test data in MoDaC.
+* Processed training and test data in [MoDaC](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-6996872).
 
 Trained Model:
 * Trained model is defined by combining the untrained model + model weights.
-* Trained model weights are used in inference p1b2.model.h5.
+* Trained model weights are used in inference [tc1.model.h5](https://modac.cancer.gov/searchTab?dme_data_id=NCI-DME-MS01-6996872)
 
 ### Technical Details:
-Please refer to this [README](./Pilot1/TC1/README.md).
+Please refer to this [README](./Pilot1/TC1/README.md)
