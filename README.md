@@ -5,7 +5,7 @@ The Tumor Classifier capability (TC1) shows how to train and use a neural networ
 (e.g., RNASeq expressions) provided in Genomics Data Commons (GDC).
 
 ### User Community:	
-Primary: Cancer biology data modeling
+Primary: Cancer biology data modeling<br />
 Secondary: Machine Learning; Bioinformatics; Computational Biology
 
 ### Usability:	
